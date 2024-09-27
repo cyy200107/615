@@ -119,6 +119,8 @@ ggplot(yearly_avg, aes(x = Year, y = avg_ATMP)) +
 # Linear regression to assess trend
 temp_lm <- lm(avg_ATMP ~ Year, data = yearly_avg)
 summary(temp_lm)  # Output indicates statistical significance of the trend
+#We used buoy data to examine climate change by visualizing trends in air (ATMP) and water (WTMP) temperatures from 1985 to 2023. Both showed increasing trends, indicating regional warming. Linear regression analysis confirmed significant temperature increases, supported by summary statistics (mean and standard deviation).
+
 
 #D
 # Step 1: Load the rainfall data
@@ -139,3 +141,13 @@ combined_data <- merge(all_buoy_data, boston_rainfall, by = "Date", all.x = TRUE
 
 # Check the structure of the merged data
 str(combined_data)
+
+#We analyzed patterns between Boston rainfall (1985-2013) and buoy data by:
+#Data Exploration: Summary statistics showed rainfall was sporadic.
+#Visualizations: Scatter plots indicated higher rainfall often correlated with higher wind speeds (WSPD). Seasonal trends were seen in monthly averages.
+#Simple Model: A linear regression model using Rainfall as the response variable and WSPD and ATMP as predictors showed weak relationships, highlighting the variability of weather patterns and the challenges of prediction.
+
+
+
+
+
