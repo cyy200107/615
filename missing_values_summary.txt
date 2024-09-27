@@ -1,0 +1,8 @@
+Summary of Missing Values Analysis:
+Total number of missing values for each column:
+    YY     MM     DD     hh     WD   WSPD    GST   WVHT    DPD    APD    MWD    BAR   ATMP   WTMP   DEWP    VIS 
+346151      0      0      0 280220      0      0      0      0      0      0 280220 102761  13186      0      0 
+  Date   YYYY   TIDE     mm    #YY   WDIR   PRES 
+444870 396370 129610 164650 182081 210347 182255 
+
+See 'NA_Count_WDIR_Per_Year.png' for a visualization of missing WDIR values by year.
